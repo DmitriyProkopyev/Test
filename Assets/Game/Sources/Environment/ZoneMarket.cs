@@ -4,4 +4,8 @@ using UnityEngine;
 
 public class ZoneMarket : Zone
 {
+    public void Sold(Zombie zombie)
+    {
+        
+    }
 }
