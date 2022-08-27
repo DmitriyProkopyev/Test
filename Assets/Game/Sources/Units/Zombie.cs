@@ -1,7 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine;
+using Zenject;
 
-public class Zombie
+public class Zombie : Unit
 {
-    
+    [Inject] private ZombieStateMachine _machine;
 }
