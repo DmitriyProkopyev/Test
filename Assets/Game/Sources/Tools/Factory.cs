@@ -14,6 +14,11 @@ public class Factory : MonoBehaviour
         _instantiator = instantiator;
     }
 
+    public int GetPaddockCost()
+    {
+        return 0;//_paddock.Prce;
+    }
+
     public void CreatePaddock(Vector3 position, Quaternion rotation)
     {
         _instantiator.InstantiatePrefab(_paddock, position, rotation, null);
