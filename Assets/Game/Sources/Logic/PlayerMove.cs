@@ -17,7 +17,7 @@ namespace Game.Sources
 
         public void Update()
         {
-            transform.position += new Vector3(_inputService.Delta.x, 0, _inputService.Delta.y);
+            transform.position += new Vector3(_inputService.Delta.x, 0, _inputService.Delta.y) * Time.deltaTime;
         }
     }
 }
