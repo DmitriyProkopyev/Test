@@ -13,7 +13,6 @@ public class Wallet : MonoBehaviour
         _coins += coins;
     }
 
-
     public void Buy(int cost)
     {
         _coins -= cost;

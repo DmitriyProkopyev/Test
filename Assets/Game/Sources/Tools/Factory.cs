@@ -16,7 +16,7 @@ public class Factory : MonoBehaviour
 
     public int GetPaddockCost()
     {
-        return 0;//_paddock.Prce;
+        return _paddock.Price;
     }
 
     public void CreatePaddock(Vector3 position, Quaternion rotation)
