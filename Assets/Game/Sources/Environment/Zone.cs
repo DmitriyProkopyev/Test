@@ -7,12 +7,12 @@ public abstract class Zone : MonoBehaviour
 {
     private List<Unit> _units = new List<Unit>();
 
-    public void AddUnit(Unit unit)
+    protected void AddUnit(Unit unit)
     {
         _units.Add(unit);
     }
 
-    public void AddUnit(List<Unit> units)
+    protected void AddUnits(IEnumerable<Unit> units)
     {
         _units.AddRange(units);
     }
