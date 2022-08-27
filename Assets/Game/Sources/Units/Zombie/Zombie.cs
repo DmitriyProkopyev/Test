@@ -2,9 +2,19 @@ using Zenject;
 
 public class Zombie : Unit
 {
-    [Inject] private ZombieStateMachine _machine;
+    private ZombieStateMachine _machine;
+    private ZombieLevels _levels;
 
-    private int _index;
+    [Inject]
+    public void Constructor(ZombieStateMachine machine, ZombieLevels levels)
+    {
+        _levels = levels;
+        _machine = machine;
+    }
+
+    private int _level;
+
+    public bool ReadyToGo => _level >= _levels.Count;
 
     private void OnEnable() => _machine.Fed += Upgrade;
 
@@ -12,7 +22,7 @@ public class Zombie : Unit
 
     private void Upgrade()
     {
-        _index++;
-        //Change Model
+        _level++;
+        var stage = _levels[_level];
     }
 }

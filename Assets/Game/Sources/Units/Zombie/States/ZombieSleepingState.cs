@@ -1,14 +1,11 @@
 using Lib;
 using Zenject;
 
-public class IdleState : State
+public class ZombieSleepingState : SimpleState
 {
     [Inject] private ZombieAnimator _animator;
     
     public override void Initialize() => Start();
 
-    private void Start()
-    {
-        _animator.Idle();
-    }
+    private void Start() => _animator.Sleep();
 }
