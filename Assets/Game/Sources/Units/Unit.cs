@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Human : Unit
+public class Unit : MonoBehaviour
 {
     
 }
