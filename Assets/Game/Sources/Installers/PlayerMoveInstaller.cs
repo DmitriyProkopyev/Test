@@ -3,7 +3,7 @@ using Zenject;
 
 namespace Game.Sources.Installers
 {
-    public class PlayerInstaller : MonoInstaller
+    public class PlayerMoveInstaller : MonoInstaller
     {
         [SerializeField] private PlayerMove _player;
 
