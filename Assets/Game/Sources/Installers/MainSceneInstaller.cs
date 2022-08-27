@@ -1,12 +1,15 @@
 using UnityEngine;
 using Zenject;
 
-public class MainSceneInstaller : Installer<MainSceneInstaller>
+namespace Game.Sources.Installers
 {
-    [SerializeField] private Factory _factory;
-
-    public override void InstallBindings()
+    public class MainSceneInstaller : MonoInstaller
     {
-        Container.Bind<Factory>().FromComponentInNewPrefab(_factory);
+        [SerializeField] private Factory _factory;
+
+        public override void InstallBindings()
+        {
+            Container.Bind<Factory>().FromComponentInNewPrefab(_factory).AsSingle();
+        }
     }
 }
