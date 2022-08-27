@@ -2,17 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ZonePaddock : Zone
+public class ZonePaddock : Zone<Zombie>
 {
     [SerializeField] private int _price;
 
-    public void AddHuman(Human human)
+    public void Recycle(List<Human> humans)
     {
-        AddUnit(human);
-    }
-
-    public void AddHumans(List<Human> humans)
-    {
-        AddUnits(humans);
+        
     }
 }
