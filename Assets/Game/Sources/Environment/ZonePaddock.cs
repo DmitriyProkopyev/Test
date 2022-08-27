@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Zenject;
 
 public class ZonePaddock : Zone<Zombie>
 {
@@ -8,6 +9,6 @@ public class ZonePaddock : Zone<Zombie>
 
     public void Recycle(List<Human> humans)
     {
-        
+    
     }
 }
