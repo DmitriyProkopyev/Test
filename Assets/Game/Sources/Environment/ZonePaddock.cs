@@ -3,25 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
 
-public class ZonePaddock : Zone
+public class ZonePaddock : Zone<Zombie>
 {
     [SerializeField] private int _price;
-    //private Factory _factory;
 
-    //[Inject]
-    //public void Constructor(Factory factory)
-    //{
-    //    _factory = factory;
-    //}
-
-    public void AddHuman(Human human)
+    public void Recycle(List<Human> humans)
     {
-        AddUnit(human);
-        //_factory.CreatePaddock();
-    }
-
-    public void AddHumans(List<Human> humans)
-    {
-        AddUnits(humans);
+    
     }
 }
