@@ -1,7 +1,8 @@
+using Lib;
 using UnityEngine;
 using Zenject;
 
-public class EatingState : MonoBehaviour
+public class ZombieEatingState : SimpleState
 {
     [Inject] private ZombieAnimator _animator;
 
