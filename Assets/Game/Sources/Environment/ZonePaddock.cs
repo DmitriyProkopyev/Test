@@ -4,4 +4,5 @@ using UnityEngine;
 
 public class ZonePaddock : Zone
 {
+    [SerializeField] private int _price;
 }
