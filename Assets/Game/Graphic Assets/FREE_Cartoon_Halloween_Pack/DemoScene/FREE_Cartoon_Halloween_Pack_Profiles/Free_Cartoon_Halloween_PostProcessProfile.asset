@@ -21,10 +21,10 @@ MonoBehaviour:
     value: 2.67
   aperture:
     overrideState: 1
-    value: 0.05
+    value: 0.12
   focalLength:
     overrideState: 1
-    value: 7
+    value: 29
   kernelSize:
     overrideState: 1
     value: 1
@@ -46,25 +46,25 @@ MonoBehaviour:
     value: 1
   intensity:
     overrideState: 1
-    value: 18.79
+    value: 31.2
   threshold:
     overrideState: 1
-    value: 0.83
+    value: 0.88
   softKnee:
     overrideState: 0
-    value: 0.5
+    value: 0.414
   clamp:
     overrideState: 0
-    value: 65472
+    value: 65471.42
   diffusion:
     overrideState: 0
-    value: 7
+    value: 4.36
   anamorphicRatio:
     overrideState: 0
-    value: 0
+    value: -0.245
   color:
     overrideState: 1
-    value: {r: 0.8301887, g: 0.2195647, b: 0, a: 1}
+    value: {r: 1, g: 0.26415095, b: 0, a: 1}
   fastMode:
     overrideState: 0
     value: 0
@@ -92,7 +92,7 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   mode:
-    overrideState: 0
+    overrideState: 1
     value: 0
   color:
     overrideState: 0
@@ -102,7 +102,7 @@ MonoBehaviour:
     value: {x: 0.5, y: 0.5}
   intensity:
     overrideState: 1
-    value: 0.547
+    value: 0.594
   smoothness:
     overrideState: 0
     value: 0.2
@@ -154,7 +154,7 @@ MonoBehaviour:
     overrideState: 1
     value: 1
   gradingMode:
-    overrideState: 0
+    overrideState: 1
     value: 1
   externalLut:
     overrideState: 0
@@ -162,7 +162,7 @@ MonoBehaviour:
     defaultState: 1
   tonemapper:
     overrideState: 0
-    value: 0
+    value: 3
   toneCurveToeStrength:
     overrideState: 0
     value: 0
@@ -189,11 +189,11 @@ MonoBehaviour:
     overrideState: 0
     value: 1
   temperature:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: -14.6
   tint:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 11.6
   colorFilter:
     overrideState: 0
     value: {r: 1, g: 1, b: 1, a: 1}
@@ -241,7 +241,7 @@ MonoBehaviour:
     value: 100
   lift:
     overrideState: 1
-    value: {x: 0.9554693, y: 0.9802839, z: 1, w: 0}
+    value: {x: 1, y: 0.91580236, z: 0.846532, w: 0}
   gamma:
     overrideState: 1
     value: {x: 0.834479, y: 0.9327918, z: 1, w: 0}
@@ -1469,12 +1469,12 @@ MonoBehaviour:
     value: 0
   intensity:
     overrideState: 1
-    value: 0.42
+    value: 3.33
   color:
-    overrideState: 0
+    overrideState: 1
     value: {r: 0, g: 0, b: 0, a: 1}
   ambientOnly:
-    overrideState: 0
+    overrideState: 1
     value: 1
   noiseFilterTolerance:
     overrideState: 0
@@ -1493,7 +1493,7 @@ MonoBehaviour:
     value: 0
   radius:
     overrideState: 1
-    value: 0.08
+    value: 0.19
   quality:
-    overrideState: 0
+    overrideState: 1
     value: 2
