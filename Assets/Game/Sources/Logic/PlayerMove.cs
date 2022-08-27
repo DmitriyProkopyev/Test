@@ -8,6 +8,7 @@ namespace Game.Sources
     public class PlayerMove : MonoBehaviour
     {
         [SerializeField] private float _speed = 5f;
+        [SerializeField] private CharacterController _controller;
         
         private IInputService _inputService;
 
@@ -20,8 +21,7 @@ namespace Game.Sources
         public void Update()
         {
             var moveDirection = GetInput();
-            
-            transform.position += moveDirection * Time.deltaTime * _speed;
+            _controller.Move(moveDirection * _speed * Time.deltaTime);
             
             if(moveDirection != Vector3.zero)
                 transform.forward = moveDirection;
