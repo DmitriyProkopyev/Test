@@ -12,10 +12,10 @@ namespace Game.Sources
             Vector2 delta = Vector2.zero;
             
             if (Input.GetKey(KeyCode.A)) 
-                delta += Vector2.right;
+                delta += Vector2.left;
 
             if (Input.GetKey(KeyCode.D)) 
-                delta += Vector2.left;
+                delta += Vector2.right;
 
             if (Input.GetKey(KeyCode.W)) 
                 delta += Vector2.up;
@@ -23,7 +23,7 @@ namespace Game.Sources
             if (Input.GetKey(KeyCode.S))
                 delta += Vector2.down;
 
-            Delta = delta;
+            Delta = delta.normalized;
         }
     }
 }
