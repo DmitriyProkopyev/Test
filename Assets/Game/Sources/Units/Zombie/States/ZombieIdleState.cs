@@ -3,8 +3,11 @@ using Zenject;
 
 public class ZombieIdleState : SimpleState
 {
-    [Inject] private ZombieAnimator _animator;
+    private ZombieAnimator _animator;
     
+    [Inject]
+    public void Construct(ZombieAnimator animator) => _animator = animator;
+
     public override void Initialize() => Start();
 
     private void Start()
